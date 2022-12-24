@@ -1,0 +1,15 @@
+{
+  "name": "Are you open in new tab?",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Check whether this link is opened in new tab.",
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "css": ["style.css"],
+      "js": ["jquery.js", "script.js"]
+    }
+  ],
+  "web_accessible_resources": ["fonts/*"]
+}
